@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
@@ -16,7 +16,7 @@
     header {
       background: linear-gradient(135deg, #0066cc, #00ccaa);
       color: white;
-      padding: 2rem;
+      padding: 2rem 1rem;
       text-align: center;
     }
 
@@ -27,6 +27,7 @@
 
     p {
       font-size: 1.2rem;
+      margin: 0;
     }
 
     .countdown {
@@ -36,10 +37,46 @@
       text-align: center;
     }
 
-    .form-container {
-      background: white;
+    /* ====== Sections (Problems + Features) ====== */
+    .section {
+      background: #ffffff;
       margin: 2rem auto;
-      padding: 2rem;
+      padding: 2rem 1.5rem;
+      max-width: 800px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+
+    .section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #0066cc;
+    }
+
+    .section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .section li {
+      margin: 0.7rem 0;
+      line-height: 1.6;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .section li::before {
+      content: "✓";
+      margin-left: 0.5rem;
+      color: #00ccaa;
+      font-weight: bold;
+    }
+
+    /* ====== Form ====== */
+    .form-container {
+      background: #ffffff;
+      margin: 2rem auto;
+      padding: 2rem 1.5rem;
       max-width: 600px;
       border-radius: 12px;
       box-shadow: 0 5px 20px rgba(0,0,0,0.1);
@@ -69,12 +106,17 @@
       border-radius: 8px;
       font-size: 1.1rem;
       cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #0055aa;
     }
 
     footer {
       text-align: center;
       font-size: 0.9rem;
-      padding: 2rem;
+      padding: 2rem 1rem;
       color: #777;
     }
   </style>
@@ -86,10 +128,35 @@
   <p>منصة عربية للمبدعين والرحالة الرقميين - أنشئ، سافر، وازدهر!</p>
 </header>
 
+<!-- ====== Countdown ====== -->
 <div class="countdown">
   سيتم الإطلاق خلال: <span id="timer"></span>
 </div>
 
+<!-- ====== Problems Section ====== -->
+<section class="section" id="problems">
+  <h2>المشكلات التي نحلها</h2>
+  <ul>
+    <li>صعوبة العثور على منصة عربية متكاملة لبيع التصاميم الرقمية.</li>
+    <li>محدودية الوصول لعملاء جدد دون تكاليف تسويقية مرتفعة.</li>
+    <li>غياب أدوات تُسهِّل نمط حياة الرحالة الرقميين وتربطهم بفرص عمل.</li>
+    <li>الحاجة لإرشاد ذكي لاتخاذ قرارات حول السفر، العمل، والتوازن بينهما.</li>
+  </ul>
+</section>
+
+<!-- ====== Features Section ====== -->
+<section class="section" id="features">
+  <h2>مميزات Nomad Mind</h2>
+  <ul>
+    <li>متجر شخصي مجاني وسهل لبيع التصاميم والمنتجات الرقمية.</li>
+    <li>تسويق تلقائي يعتمد على الذكاء الاصطناعي للوصول إلى العملاء المستهدفين.</li>
+    <li>مجتمع تفاعلي يجمع المصممين، الفريلانسرز، والرحالة الرقميين.</li>
+    <li>مساعد ذكي يقدم توصيات حول فرص العمل وأماكن الإقامة والعمل المشترك.</li>
+    <li>لوحة تحكم مبسطة لمتابعة المبيعات، التحليلات، وإدارة المنتجات.</li>
+  </ul>
+</section>
+
+<!-- ====== Form Section ====== -->
 <div class="form-container">
   <h2>شاركنا رأيك وكن من الأوائل</h2>
   <form>
