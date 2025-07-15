@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
@@ -117,8 +117,8 @@
     <div class="ml-form-align-center ">
       <div class="ml-form-embedWrapper embedForm">
         <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
-          <div class="ml-form-embedContent" style=" ">
-            <h4>Newsletter</h4>
+          
+<p style="color:#cc0000; font-weight:bold; font-size:1.1rem; margin-top:0.5rem;">سجل الآن واحصل على شهر مجاني! المقاعد محدودة لأول المشتركين.</p>
             <p>سجل لتصلك الأخبار والعروض الخاصة!</p>
           </div>
           <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/1660733/forms/160032468464829657/subscribe" method="post" target="_blank">
